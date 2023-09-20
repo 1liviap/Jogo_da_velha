@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOGO DA VELHA</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="geral" id="geral">
+    <h1>Jogo da Velha</h1>
+
+    <div>
+     <!-- Linha 1 -->
+    <div id="1" class="quadrado" onclick="escolherQuadro(this.id)">-</div>
+    <div id="2" class="quadrado" onclick="escolherQuadro(this.id)">-</div>
+    <div id="3" class="quadrado" onclick="escolherQuadro(this.id)">-</div>
+    </div>
+
+    <div>
+    <!-- Linha 2 -->
+    <div id="4" class="quadrado" onclick="escolherQuadro(this.id)">-</div>
+    <div id="5" class="quadrado" onclick="escolherQuadro(this.id)">-</div>
+    <div id="6" class="quadrado" onclick="escolherQuadro(this.id)">-</div>
+    </div>
+
+    <div>
+    <!-- Linha 3 -->
+    <div id="7" class="quadrado" onclick="escolherQuadro(this.id)">-</div>
+    <div id="8" class="quadrado" onclick="escolherQuadro(this.id)">-</div>
+    <div id="9" class="quadrado" onclick="escolherQuadro(this.id)">-</div>
+    </div>
+
+
+    <div class="jogador">
+        <label>
+            Jogador:
+        </label>
+        <label id="jogador-selecionado">
+
+        </label>
+    </div>
+
+    <div class="vencedor">
+        <label>
+            Vencedor:
+        </label>
+        <label id="vencedor-selecionado">
+
+        </label>
+    </div>
+
+    <div>
+        <button onclick="reiniciar()" id="reinicia">
+            Reiniciar
+        </button>
+    </div>
+
+
+    <div class="quadro">
+        <div class="cor">Cor:</div>
+    
+    <div id="rosa" class="rosa" onclick="mudarCor()"></div>
+    <div id="azul" class="azul" onclick="mudarCor2()"></div>
+    <div id="roxo" class="roxo" onclick="mudarCor3()"></div>
+    <div id="cinza" class="cinza" onclick="mudarCor4()"></div>
+    </div> 
+
+
+    <div id="placar">
+        <span id="placar-jogador-x">Jogador X: 0</span>
+        <span id="placar-jogador-o">Jogador O: 0</span>
+    </div>
+
+    </div>
+    <script src="velha.js"></script>
+</body>
+</html>

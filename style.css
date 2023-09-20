@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+
+body{
+    text-align: center;
+    background-color: #ffe1fa;
+    margin: 0px;
+}
+
+.quadrado{
+    text-align: center;
+    width: 50px;
+    background: #fdc8f4;
+    display: inline-block;
+    padding: 40px;
+    font-size: 60px;
+    margin: 5px;
+    cursor: pointer;
+    color: #fdc8f4;
+}
+
+.jogador, .vencedor, .quadro{
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+button{
+    margin-top: 10px;
+    width: 10%;
+    height: 30px;
+    background-color:#fdc8f4;
+    cursor: pointer;
+}
+
+.quadro{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    margin-left: 760px;
+}
+
+.quadro div{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+
+.cor{
+    padding: 20px;
+}
+
+.rosa{
+    background-color: #ffbbf4;
+    margin: 5px;
+    border-radius: 7px;
+}
+
+.roxo{
+    background-color: #d6b1ff;
+    margin: 5px;
+    border-radius: 7px;
+}
+
+.azul{
+    background-color: #a9abff;
+    margin: 5px;
+    border-radius: 7px;
+}
+
+.cinza{
+    background-color: lightgray;
+    margin: 5px;
+    border-radius: 7px;
+}
+
+.geral{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#placar{
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+#placar-jogador-x{
+    margin-right: 10px;
+}
